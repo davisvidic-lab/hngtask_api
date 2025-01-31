@@ -10,7 +10,7 @@ const githubURL = 'https://github.com/davisvidic-lab/hngtask_api.git';  // Repla
 app.get('/api/info', (req, res) => {
   const response = {
     email: registeredEmail,
-    datetime: new Date().toISOString(),  // Current datetime in ISO 8601 format
+    current_datetime: new Date().toISOString(),  // Current datetime in ISO 8601 format
     github_url: githubURL
   };
 
